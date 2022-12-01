@@ -17,7 +17,9 @@
                                 <th class="fw-bold">Pavadinimas</th>
 
                                 <th></th>
+                                @can('admin')
                                 <th colspan="2" class="fw-bold">Veiksmai</th>
+                                @endcan
                             </tr>
                             </thead>
                             <tbody>

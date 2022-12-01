@@ -35,9 +35,10 @@
 
                                     <td>{{ $book->page_number }}</td>
                                     <td>{{ $book->category->name }}</td>
-
-                                    <td><i class="fa fa-heart text-danger"> </i></td>
-
+                                    @can('user')
+                                    <td><button class="btn btn-danger"><i class="fa fa-heart text-light"> </i></button></td>
+                                    <td><button class="btn btn-success">Rezervuoti</button></td>
+                                    @endcan
                                     <td>
                                         @can('admin')
                                         <a href="{{ route('book.edit', $book->id) }}" class="btn btn-primary">
