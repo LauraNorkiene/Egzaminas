@@ -20,6 +20,9 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+{{--    <style>--}}
+{{--        --}}
+{{--    </style>--}}
 </head>
 <body>
 <div id="app">
@@ -91,7 +94,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" >
         @yield('content')
     </div>
 </div>
